@@ -121,9 +121,7 @@
 #define AID_SENSORS       3011 /* access to /dev/socket/sensor_ctl_socket & QCCI/QCSI */
 
 
-#ifdef BOARD_HAS_SENSORS_GROUP
 #define AID_SENSORS       3011 /* access to /dev/socket/sensor_ctl_socket & QCCI/QCSI */
-#endif
 
 #define AID_RFS           3012  /* Remote Filesystem for peripheral processors */
 #define AID_RFS_SHARED    3013  /* Shared files for Remote Filesystem for peripheral processors  */
@@ -229,9 +227,7 @@ static const struct android_id_info android_ids[] = {
     { "wakelock",      AID_WAKELOCK, },
     { "sensors",       AID_SENSORS, },
 
-#ifdef BOARD_HAS_SENSORS_GROUP
     { "sensors",       AID_SENSORS, },
-#endif
 
     { "rfs",           AID_RFS, },
     { "rfs_shared",    AID_RFS_SHARED, },
